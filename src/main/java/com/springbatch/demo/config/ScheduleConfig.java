@@ -44,7 +44,7 @@ public class ScheduleConfig {
     }
 
     @Bean
-    private ThreadPoolTaskExecutor poolTaskExecutor() {
+    public ThreadPoolTaskExecutor poolTaskExecutor() {
         ThreadPoolTaskExecutor threadPoolTaskExecutor = new ThreadPoolTaskExecutor();
         threadPoolTaskExecutor.setCorePoolSize(5);
         threadPoolTaskExecutor.setMaxPoolSize(5);
